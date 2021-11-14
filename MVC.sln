@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC\MVC.csproj", "{3E3678D1-250F-4619-B51B-78044D287408}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dota2Api", "third_party\dota2-api\Dota2Api\Dota2Api.csproj", "{D4D4D891-CC22-420F-8297-D7DCB1D7EDFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E3678D1-250F-4619-B51B-78044D287408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3678D1-250F-4619-B51B-78044D287408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3678D1-250F-4619-B51B-78044D287408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3678D1-250F-4619-B51B-78044D287408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D4D891-CC22-420F-8297-D7DCB1D7EDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D4D891-CC22-420F-8297-D7DCB1D7EDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D4D891-CC22-420F-8297-D7DCB1D7EDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D4D891-CC22-420F-8297-D7DCB1D7EDFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C533310F-26F2-48C5-BD09-E0F9AE577FEA}
+	EndGlobalSection
+EndGlobal
