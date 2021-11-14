@@ -1,0 +1,25 @@
+﻿@model IEnumerable<HeroesModel>
+
+@{
+    ViewData["Title"] = "Dota 2";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Dota 2 Heroes Sample App</a>.</p>
+</div>
+
+
+<div>
+    <h4>Heroes</h4>
+    <hr />
+    <div class="wrapper">
+        @foreach (var Hero in Model)
+        {
+            <a id="hero-wrapper" asp-controller="Home" asp-action="HeroInfo" asp-route-HeroID="@Hero.Id">
+                <img  class="hero-img async" src="@Hero.Thumbnail"/>
+                <span class="hero-name">@Hero.Name</span>
+            </a>
+        }
+    </div>
+</div>

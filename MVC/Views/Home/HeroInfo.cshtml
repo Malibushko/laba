@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MatchInfoModel>
+
+@{
+    ViewData["Title"] = "Hero info";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Heroes</h4>
+    <hr />
+    <table class="styled-table">
+            <thead>
+                <th>Hero</th>
+                <th>Match ID</th>
+                <th>Start Time</th>
+                <th>Result</th>
+                <th>Positive Votes</th>
+                <th>Negative Votes</th>
+                <th>KDA</th>
+            </thead>
+            <tbody>
+            @foreach (var Match in Model)
+            {
+            <tr id="hero-wrapper">
+                <td><img class="hero-img async" src="@Match.HeroThumbnail" /></td>
+                <td><a href="https://www.dotabuff.com/matches/@Match.MatchID">@Match.MatchID</a></td>
+                <td>@Match.StartTime</td>
+                <td>@Match.Result</td>
+                <td>@Match.PositiveVotes</td>
+                <td>@Match.NegativeVotes</td>
+                <td>@Match.KDA</td>
+            </tr>
+            }
+         </tbody>
+  </table>
+</div>

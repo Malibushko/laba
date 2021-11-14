@@ -1,0 +1,3 @@
+[submodule "third_party\\dota2-api"]
+	path = third_party\\dota2-api
+	url = https://github.com/Auo/dota2-api.git
